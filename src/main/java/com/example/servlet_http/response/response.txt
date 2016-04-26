@@ -1,0 +1,9 @@
+void setStatus(int statusCode)  设置状态码
+
+void setHeader(String name, String value)   一个key对应一个value  例如：Cache-Control:no-cache
+void setIntHeader(String name, int value)   设置int类型的值
+void setDateHeader(String name, long value) 设置日期类型的值
+
+void addHeader(String name, String value)   一个key对应多个value  例如：Expires:Tue, 26 Apr 2016 07:57:30 GMT
+void addIntHeader(String name, int value)   追加int类型的值（值之间逗号隔开）
+void addDateHeader(String name, long value) 追加日期类型的值（值之间逗号隔开）

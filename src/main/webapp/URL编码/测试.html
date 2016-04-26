@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GB2312">
+    <title>URLEncodingTest</title>
+</head>
+<body>
+    <h3>URL编码是在字符ASCII码的十六进制数的前面加上%</h3>
+    <h3>网站路径的编码为UTF-8编码</h3>
+    <a href="http://www.ruanyifeng.com/blog/2010/02/url_encoding.html">参考文章</a><br/>
+
+    <!-- 普通链接中的参数URL编码由meta的charset控制，即取决于浏览器对网页的解析编码 -->
+    <a href="/URLEncodingServlet?wd=春节">测试链接</a><br/>
+
+    <!-- accept-charset控制表单提交URL编码，无论是GET、POST提交 -->
+    <form action="/URLEncodingServlet" method="get" accept-charset="UTF-8">
+        <label>
+            <input type="text" name="wd"/>
+        </label>
+        <input type="submit" value="commit"/>
+    </form>
+</body>
+</html>

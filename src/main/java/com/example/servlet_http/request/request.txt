@@ -1,0 +1,9 @@
+String getHeader(String name)   获取值
+int getIntHeader(String name)   获取int类型的值
+long getDateHeader(String name) 获取日志类型的值
+
+String getParameter(String name)   获取参数    一个key对应一个value
+String [] getParameterValues(String name) 获取参数  一个key对应多个value  例如：复选框
+Map<String, String []> getParameterMap()    获取参数
+Enumeration getParameterNames()     获取参数名
+

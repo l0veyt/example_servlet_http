@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta标签的作用就相当于把http-equiv的内容设置到http头信息中 -->
+    <meta http-equiv="refresh" content="5;url=/login/login.html">
+    <title>fail</title>
+</head>
+<body onload="run()">
+    <h3>login fail !</h3>
+    <h3>页面将在<span id="time">5</span>秒之后跳转</h3>
+    <h3>如果页面没有发生跳转，请手动点击此链接 <a href="/login/login.html">跳转</a></h3>
+</body>
+    <script type="text/javascript">
+        var time = 5;
+        function run() {
+            var timeSpan = document.getElementById("time");
+            timeSpan.innerHTML = time;
+            time --;
+            window.setTimeout("run()", 1000);
+        }
+    </script>
+</html>

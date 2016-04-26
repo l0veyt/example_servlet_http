@@ -1,0 +1,117 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!-- 页面来源 -->
+  <servlet>
+    <servlet-name>RefererServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.response.referer.RefererServlet</servlet-class>
+  </servlet>
+  <!-- 重定向302 -->
+  <servlet>
+    <servlet-name>LocationServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.response.location.LocationServlet</servlet-class>
+  </servlet>
+  <!-- 刷新页面（定时）-->
+  <servlet>
+    <servlet-name>RefreshServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.response.refresh.RefreshServlet</servlet-class>
+  </servlet>
+  <!-- 客户端信息 -->
+  <servlet>
+    <servlet-name>UserAgentServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.response.userAgent.UserAgentServlet</servlet-class>
+  </servlet>
+  <!-- 模拟登录 -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.response.login.LoginServlet</servlet-class>
+  </servlet>
+  <!-- 禁用缓存 -->
+  <servlet>
+    <servlet-name>CacheServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.response.cache.CacheServlet</servlet-class>
+  </servlet>
+  <!-- 字符字节流编码 -->
+  <servlet>
+    <servlet-name>EncodingServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.response.encoding.EncodingServlet</servlet-class>
+  </servlet>
+  <!-- 文件附件形式下载 -->
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.response.download.DownloadServlet</servlet-class>
+  </servlet>
+  <!-- 演示请求 -->
+  <servlet>
+    <servlet-name>RequestServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.request.RequestServlet</servlet-class>
+  </servlet>
+  <!-- 获取参数 -->
+  <servlet>
+    <servlet-name>ParameterServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.request.ParameterServlet</servlet-class>
+  </servlet>
+  <!-- URL编码测试 -->
+  <servlet>
+    <servlet-name>URLEncodingServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.urlencoding.URLEncodingServlet</servlet-class>
+  </servlet>
+  <!-- 转发 -->
+  <servlet>
+    <servlet-name>ForwardServlet</servlet-name>
+    <servlet-class>com.example.servlet_http.request.ForwardServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RefererServlet</servlet-name>
+    <url-pattern>/refererServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LocationServlet</servlet-name>
+    <url-pattern>/locationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RefreshServlet</servlet-name>
+    <url-pattern>/refreshServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAgentServlet</servlet-name>
+    <url-pattern>/userAgentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CacheServlet</servlet-name>
+    <url-pattern>/cacheServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EncodingServlet</servlet-name>
+    <url-pattern>/encodingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/downloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestServlet</servlet-name>
+    <url-pattern>/requestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ParameterServlet</servlet-name>
+    <url-pattern>/parameterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>URLEncodingServlet</servlet-name>
+    <url-pattern>/URLEncodingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ForwardServlet</servlet-name>
+    <url-pattern>/forwardServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

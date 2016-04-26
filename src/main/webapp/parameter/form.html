@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/parameterServlet" method="post">
+        Username:<input type="text" name="username"/><br/>
+        Password:<input type="password" name="password"/><br/>
+        Gender:<input type="radio" name="gender" value="man"/>Man
+               <input type="radio" name="gender" value="woman"/>Woman<br/>
+        Hobby:<input type="checkbox" name="hobby" value="football"/>Football
+              <input type="checkbox" name="hobby" value="baseball"/>Baseball
+              <input type="checkbox" name="hobby" value="basketball"/>Basketball<br/>
+        City:
+        <select name="city">
+            <option selected="selected">--select--</option>
+            <option value="NewYork">New York</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Beijing">Beijing</option>
+        </select>
+        <br/>
+        <input type="submit" value="commit"/>
+    </form>
+</body>
+</html>
